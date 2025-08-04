@@ -658,7 +658,7 @@ export default function VendorLandingPage() {
               },
               {
                 question: "What happens if a customer cancels?",
-                answer: "If they cancel last minute you'll still keep the deposit, minus the 5% platform fee. If they cancel within the agreed window of your cancellation terms, they'll be refunded.  48 or 72 hours before the event. When a customer cancels you'll be notified immediately."
+                answer: "If they cancel last minute you'll still keep the deposit, minus the 5% platform fee. If they cancel within the agreed window of your cancellation terms, they'll be refunded. When a customer cancels you'll be notified immediately."
               },
               {
                 question: "Can I invite my own clients to book me here?",
