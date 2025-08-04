@@ -355,24 +355,19 @@ export default function VendorLandingPage() {
       />
       {/* Header */}
       <header className="bg-background">
-        <div className="container mx-auto px-4 py-8">
+        <div className="container mx-auto px-4 py-1 md:py-2">
           <div className="flex justify-center">
-            <div className="flex items-center space-x-2">
-              <Sparkles className="h-8 w-8 text-primary" />
-              <span className="text-2xl font-bold airbnb-header" style={{ lineHeight: "1.4" }}>PartaiBook</span>
-              <Badge className="border border-[#A78BFA]/30" style={{ backgroundColor: "rgba(167, 139, 250, 0.2)", color: "#A78BFA" }}>
-                For Vendors
-              </Badge>
-            </div>
+            <a href="/" className="cursor-pointer">
+              <img src="/logo.png" alt="Partaibook" className="h-14 md:h-24 w-auto" />
+            </a>
           </div>
         </div>
-        <div className="w-full border-b border-border" />
       </header>
 
       {/* Hero Section */}
-      <section className="py-16 px-8 pb-8">
+      <section className="py-4 md:py-8 px-8 pb-8">
         <div className="container mx-auto text-center">
-          <h2 className="text-5xl font-bold mb-6 airbnb-header" style={{ lineHeight: "1.2" }}>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 airbnb-header" style={{ lineHeight: "1.2" }}>
             You make parties happen. <br />
             <span style={{ color: "#00CBA7" }}>We make bookings effortless.</span>
           </h2>
@@ -380,7 +375,7 @@ export default function VendorLandingPage() {
           <div 
             className="hero-paragraph-1" 
             style={{ 
-              fontSize: "18px !important", 
+              fontSize: "17px !important", 
               color: "#222222 !important",
               fontWeight: "400 !important",
               lineHeight: "1.5 !important",
@@ -398,7 +393,7 @@ export default function VendorLandingPage() {
           <div 
             className="hero-paragraph-2" 
             style={{ 
-              fontSize: "18px !important",
+              fontSize: "17px !important",
               color: "#222222 !important",
               fontWeight: "400 !important",
               lineHeight: "1.5 !important",
@@ -415,7 +410,7 @@ export default function VendorLandingPage() {
 
           <div 
             style={{ 
-              fontSize: "18px !important",
+              fontSize: "17px !important",
               color: "#222222 !important",
               fontWeight: "600 !important",
               lineHeight: "1.5 !important",
@@ -711,8 +706,7 @@ export default function VendorLandingPage() {
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
-              <Sparkles className="h-6 w-6 text-primary" />
-              <span className="text-lg font-semibold" style={{ color: "#222222" }}>PartaiBook</span>
+              <span className="text-lg font-semibold" style={{ color: "#00CBA7" }}>Partaibook</span>
             </div>
             <div className="flex space-x-6 text-sm">
               <a href="/privacy" className="text-muted-foreground hover:text-primary transition-colors">Privacy</a>
@@ -723,7 +717,7 @@ export default function VendorLandingPage() {
           <div className="w-full border-t border-border my-6" />
 
           <div className="text-center text-sm text-muted-foreground">
-            <p>© 2025 PartaiBook. All rights reserved. AI-Powered Party Planning for Real Life.</p>
+            <p>© 2025 Partaibook. All rights reserved. AI-Powered Party Planning for Real Life.</p>
           </div>
         </div>
       </footer>

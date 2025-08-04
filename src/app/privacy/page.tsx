@@ -10,13 +10,11 @@ export default function PrivacyPolicy() {
       <header className="bg-background">
         <div className="container mx-auto px-4 py-8">
           <div className="flex justify-center">
-            <div className="flex items-center space-x-2">
-              <Sparkles className="h-8 w-8 text-primary" />
-              <span className="text-2xl font-bold" style={{ lineHeight: "1.4", color: "#222222" }}>PartaiBook</span>
-            </div>
+            <a href="/" className="cursor-pointer">
+              <img src="/logo.png" alt="Partaibook" className="h-16 w-auto" />
+            </a>
           </div>
         </div>
-        <div className="w-full border-b border-border" />
       </header>
 
       {/* Privacy Policy Content */}
