@@ -1,0 +1,24 @@
+/* Airbnb Color Override - Force all paragraph text to use #6A6A6A */
+div[style*="color: #6A6A6A"] {
+  color: #6A6A6A !important;
+}
+
+p[style*="color: #6A6A6A"] {
+  color: #6A6A6A !important;
+}
+
+/* Force override for specific hero section */
+.hero-paragraph-1 {
+  color: #6A6A6A !important;
+  font-size: 20px !important;
+}
+
+.hero-paragraph-2 {
+  color: #6A6A6A !important;
+}
+
+/* Global override for any element with airbnb-paragraph class */
+.airbnb-paragraph,
+.airbnb-paragraph * {
+  color: #6A6A6A !important;
+}

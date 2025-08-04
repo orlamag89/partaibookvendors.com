@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Force override before Tailwind loads */
+* {
+  --custom-paragraph-color: #6A6A6A;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 171 100% 39%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 262 83% 58%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 0 0% 42%; /* This is #6A6A6A in HSL */
+    --accent: 28 100% 63%;
+    --accent-foreground: 222.2 84% 4.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 171 100% 39%;
+  }
+  
+  /* Force override with maximum specificity */
+  html body div.hero-paragraph-1,
+  html body div.hero-paragraph-2 {
+    color: #6A6A6A !important;
+  }
+}
+
+/* High specificity override for Airbnb colors */
+html body .hero-paragraph-1,
+html body .hero-paragraph-2,
+html body div[style*="color: #6A6A6A"] {
+  color: #6A6A6A !important;
+}
+
+/* Ultra-specific targeting */
+section div.container div.hero-paragraph-1,
+section div.container div.hero-paragraph-2 {
+  color: #6A6A6A !important;
+}
+
+@layer utilities {
+  .airbnb-header {
+    color: #222222 !important;
+  }
+  
+  .airbnb-paragraph {
+    color: #6A6A6A !important;
+  }
+  
+  /* Override any text color utilities */
+  .text-airbnb-paragraph {
+    color: #6A6A6A !important;
+  }
+
+  /* Force override for specific elements */
+  p, div {
+    color: inherit;
+  }
+}
