@@ -607,10 +607,10 @@ export default function VendorLandingPage() {
                 {[
                   "Bookings come to you - no chasing or sending reminders",
                   "Payments handled automatically with deposits locked in at booking",
-                  "Get paid the same day of events with Instant Banking",
-                  "More time on your hands thanks to your trained FAQ assistant",
+                  "Your own AI assistant answers customer questions instantly",
+                  "Reviews to build your reputation and get more bookings",
                   "Organized booking information at your fingertips",
-                  "Never missing a booking thanks to your synced calendar"
+                  "Something goes wrong? Partaibook’s got your back"
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-3">
                     <span className="text-green-500 text-base">✅</span>
@@ -634,11 +634,11 @@ export default function VendorLandingPage() {
             {[
               {
                 question: "Where is Partaibook available?",
-                answer: "We're launching in New York City first! If you're a vendor based in the Bronx, Queens, or Brooklyn, you'll be the first vendors who can create profiles and take bookings as soon as we launch. We're expanding to Manhattan, Staten Island, and other cities soon after - join the waitlist to be first in line when we reach your area. You'll need to be registered as a business or sole trader with your local tax authority and accept digital payments."
+                answer: "We're launching in New York City first! If you're a vendor based in the Bronx, Queens, or Brooklyn, you'll be the first vendors who can create profiles and take bookings as soon as we launch. We're expanding to Manhattan, Staten Island, and other cities soon after - join the waitlist to be first in line when we reach your area."
               },
               {
                 question: "Does it cost to join Partaibook?",
-                answer: "Nope, it’s free to create your profile and showcase your services. Founding members get 90 days fee-free bookings, we'll take 0% commission. After 90 days, we only take 5% of the deposit (not the full booking amount) as a platform fee. You keep the majority of your earnings! There are no hidden costs or montlhly charges."
+                answer: "No! It’s free to create your profile and showcase your services. Founding members get 90 days fee-free bookings, we'll take 0% commission. After 90 days, we only take 5% of the deposit (not the full booking amount) as a platform fee. You keep the majority of your earnings! There are no hidden costs or montlhly charges."
               },
               {
                 question: "How do I get paid?",
@@ -654,23 +654,23 @@ export default function VendorLandingPage() {
               },
               {
                 question: "Can I control my availability?",
-                answer: "For now, you can set your availability by either manually editing the calendar in the dashboard, or uploading a photo of your handwritten bookings (even a screenshot of your digital calendar) and the AI will fill in the dates for you. You'll also be able to add buffer time between orders and black out days you're unavailable. Editing your availability can be updated easily in the dashboard, and we’ll notify you when new bookings come in."
+                answer: "Absolutely, you can set your availability by either manually editing the calendar in the dashboard, or uploading a photo of your handwritten bookings (even a screenshot of your digital calendar) and the AI will fill in the dates for you. You'll also be able to add buffer time between orders and black out days you're unavailable. Editing your availability can be updated easily in the dashboard, and we’ll notify you when new bookings come in."
               },
               {
                 question: "What happens if a customer cancels?",
-                answer: "We include flexible cancellation policies which protects you. Deposits are non-refundable unless the customer cancels within the agreed window, typically 48 or 72 hours before the event. We’ll also notify you of any cancellations so you can adjust your schedule accordingly."
+                answer: "If they cancel last minute you'll still keep the deposit, minus the 5% platform fee. If they cancel within the agreed window of your cancellation terms, they'll be refunded.  48 or 72 hours before the event. When a customer cancels you'll be notified immediately."
               },
               {
                 question: "Can I invite my own clients to book me here?",
-                answer: "Yes! You can share your unique booking link with your clients, allowing them to book your services directly through PartaiBook. As a founding member, you’ll also receive a referral code for up to 5 clients - each one gets $10 off their booking which will help you build verified reviews to boost your profile and ranking. Everyone wins."
+                answer: "Yes! You can share your unique booking link with your clients, allowing them to book your services directly through PartaiBook. As a founding member, we'll also give you referral codes for your first 5 clients - each one gets $10 off their booking. This helps you build verified reviews and grow faster."
               },
               {
                 question: "What’s the AI FAQ Assistant?",
-                answer: "You can train your very own mini assistant to answer common questions from customers (like delivery, pricing, or custom options). This saves you time and improves your response rate. You'll be able to edit the answers and add new questions as needed, so it’s always up-to-date with your offerings. Over time, it learns from your interactions to provide even better responses."
+                answer: "You can train your very own mini assistant to answer common questions from customers (like delivery, pricing, or custom options) so you don't have to. This saves you time and improves your response rate. You'll be able to edit your answers and add new questions anytime, so it’s always up-to-date with your offerings. Over time, it learns from your interactions to provide even better responses."
               },
               {
                 question: "How do I get started?",
-                answer: "Right now we’re inviting vendors to join our waitlist. Once you sign up, we’ll send you an invite to create your profile and get started. We’re launching soon, so you’ll be one of the first to experience PartaiBook!"
+                answer: "Right now we’re inviting vendors to join our waitlist, just click the orange buttons on site and drop your details. We'll notify you the moment vendor profiles go live."
               }
             ].map((faq, idx) => (
               <FAQItem key={idx} question={faq.question} answer={faq.answer} />
