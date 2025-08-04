@@ -641,7 +641,7 @@ export default function VendorLandingPage() {
                 question: "Where is PartaiBook available?",
                 answer: "We're launching in New York City first! If you're a vendor based in the Bronx, Queens, or Brooklyn, you'll be the first vendors who can create profiles and take bookings as soon as we launch. We're expanding to Manhattan, Staten Island, and other cities soon after - join the waitlist to be first in line when we reach your area. You'll need to be registered as a business or sole trader with your local tax authority and accept digital payments."
               },
-            {
+              {
                 question: "Does it cost to join PartaiBook?",
                 answer: "Nope, it’s free to create your profile and showcase your services. Founding members get 90 days fee-free bookings, we'll take 0% commission. After 90 days, we only take 5% of the deposit (not the full booking amount) as a platform fee. You keep the majority of your earnings! There are no hidden costs or montlhly charges."
               },
@@ -677,7 +677,7 @@ export default function VendorLandingPage() {
                 question: "How do I get started?",
                 answer: "Right now we’re inviting vendors to join our waitlist. Once you sign up, we’ll send you an invite to create your profile and get started. We’re launching soon, so you’ll be one of the first to experience PartaiBook!"
               }
-            ].filter(Boolean).map((faq, idx) => (
+            ].map((faq, idx) => (
               <FAQItem key={idx} question={faq.question} answer={faq.answer} />
             ))}
           </div>
