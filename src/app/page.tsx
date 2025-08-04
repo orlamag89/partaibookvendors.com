@@ -637,7 +637,6 @@ export default function VendorLandingPage() {
           
           <div className="space-y-4">
             {[
-              ,
               {
                 question: "Where is PartaiBook available?",
                 answer: "We're launching in New York City first! If you're a vendor based in the Bronx, Queens, or Brooklyn, you'll be the first vendors who can create profiles and take bookings as soon as we launch. We're expanding to Manhattan, Staten Island, and other cities soon after - join the waitlist to be first in line when we reach your area. You'll need to be registered as a business or sole trader with your local tax authority and accept digital payments."
@@ -678,7 +677,7 @@ export default function VendorLandingPage() {
                 question: "How do I get started?",
                 answer: "Right now we’re inviting vendors to join our waitlist. Once you sign up, we’ll send you an invite to create your profile and get started. We’re launching soon, so you’ll be one of the first to experience PartaiBook!"
               }
-            ].map((faq, idx) => (
+            ].filter(Boolean).map((faq, idx) => (
               <FAQItem key={idx} question={faq.question} answer={faq.answer} />
             ))}
           </div>
