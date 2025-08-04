@@ -8,7 +8,7 @@ const supabase = createClient(supabaseUrl, supabaseServiceKey);
 
 export async function POST(request: NextRequest) {
   try {
-    const { name, email, businessType } = await request.json();
+    const { name, email, businessType, location } = await request.json();
 
     // Validate required fields
     if (!name || !email) {
@@ -26,6 +26,7 @@ export async function POST(request: NextRequest) {
           name,
           email,
           business_type: businessType || null,
+          location: location || null,
           created_at: new Date().toISOString(),
           email_consent: true,
           launch_email_sent: false

@@ -133,7 +133,8 @@ const SignupModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void
   const [formData, setFormData] = React.useState({
     name: '',
     email: '',
-    businessType: ''
+    businessType: '',
+    location: ''
   });
   const [isSubmitting, setIsSubmitting] = React.useState(false);
   const [isSuccess, setIsSuccess] = React.useState(false);
@@ -157,7 +158,7 @@ const SignupModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void
       if (response.ok) {
         setIsSuccess(true);
         // Reset form
-        setFormData({ name: '', email: '', businessType: '' });
+        setFormData({ name: '', email: '', businessType: '', location: '' });
         // Close modal after 5 seconds
         setTimeout(() => {
           setIsSuccess(false);
@@ -176,8 +177,14 @@ const SignupModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-      <div className="bg-white rounded-2xl max-w-md w-full p-6 relative">
+    <div 
+      className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
+      onClick={onClose}
+    >
+      <div 
+        className="bg-white rounded-2xl max-w-md w-full p-6 relative"
+        onClick={(e) => e.stopPropagation()}
+      >
         <button
           onClick={onClose}
           className="absolute top-4 right-4 text-gray-400 hover:text-gray-600"
@@ -257,6 +264,27 @@ const SignupModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void
                   <option value="Party Rental Services">Party Rental Services</option>
                   <option value="Treat & Favor Makers">Treat & Favor Makers</option>
                   <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div>
+                <label htmlFor="location" className="block text-sm font-medium mb-2" style={{ color: "#222222" }}>
+                  Where is your business based?
+                </label>
+                <select
+                  id="location"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm"
+                  value={formData.location}
+                  onChange={(e) => setFormData(prev => ({ ...prev, location: e.target.value }))}
+                >
+                  <option value="">Select your location</option>
+                  <option value="Bronx, NY">Bronx, NY</option>
+                  <option value="Queens, NY">Queens, NY</option>
+                  <option value="Brooklyn, NY">Brooklyn, NY</option>
+                  <option value="Manhattan, NY">Manhattan, NY (coming soon)</option>
+                  <option value="Staten Island, NY">Staten Island, NY (coming soon)</option>
+                  <option value="Other NYC Area">Other NYC Area (coming soon)</option>
+                  <option value="Outside NYC">Outside NYC (coming later)</option>
                 </select>
               </div>
 
@@ -403,7 +431,7 @@ export default function VendorLandingPage() {
           </div>
 
           <Button onClick={handleJoinPartaiBook} className="mb-8 px-6 py-3 text-base rounded-xl" style={{ backgroundColor: "#FF8C42", color: "white", border: "none" }}>
-            Become a Founding Vendor
+            Become a Founding Vendor in NYC!
           </Button>
           
           <div className="flex flex-wrap justify-center gap-2 md:gap-3">
@@ -609,7 +637,12 @@ export default function VendorLandingPage() {
           
           <div className="space-y-4">
             {[
+              ,
               {
+                question: "Where is PartaiBook available?",
+                answer: "We're launching in New York City first! If you're a vendor based in the Bronx, Queens, or Brooklyn, you'll be the first vendors who can create profiles and take bookings as soon as we launch. We're expanding to Manhattan, Staten Island, and other cities soon after - join the waitlist to be first in line when we reach your area. You'll need to be registered as a business or sole trader with your local tax authority and accept digital payments."
+              },
+            {
                 question: "Does it cost to join PartaiBook?",
                 answer: "Nope, it’s free to create your profile and showcase your services. Founding members get 90 days fee-free bookings, we'll take 0% commission. After 90 days, we only take 5% of the deposit (not the full booking amount) as a platform fee. You keep the majority of your earnings! There are no hidden costs or montlhly charges."
               },
@@ -627,7 +660,7 @@ export default function VendorLandingPage() {
               },
               {
                 question: "Can I control my availability?",
-                answer: "For now, you can set your availability manually in the dashboard, by uploading a photo of your handwritten bookings or even a screenshot of your digital calendar and the AI will fill in the dates for you. You'll also be able to add buffer time between orders and black out days you're unavailable. Editing your availability can be updated easily in the dashboard, and we’ll notify you when new bookings come in."
+                answer: "For now, you can set your availability by either manually editing the calendar in the dashboard, or uploading a photo of your handwritten bookings (even a screenshot of your digital calendar) and the AI will fill in the dates for you. You'll also be able to add buffer time between orders and black out days you're unavailable. Editing your availability can be updated easily in the dashboard, and we’ll notify you when new bookings come in."
               },
               {
                 question: "What happens if a customer cancels?",
