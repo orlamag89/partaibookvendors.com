@@ -14,7 +14,7 @@ function hexToRgb(hex: string) {
 
 // Badge component matching your design
 const Badge = ({ children, className = "", style = {} }: { children: React.ReactNode; className?: string; style?: React.CSSProperties }) => (
-  <span className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium ${className}`} style={style}>
+  <span className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium $                        answer: "Right now we're inviting vendors to join our waitlist. Once you sign up, we'll send you an invite to create your profile and get started. We're launching soon, so you'll be one of the first to experience Partaibook!"       answer: "Yes! You can share your unique booking link with your clients, allowing them to book your services directly through Partaibook. As a founding member, you'll also receive a referral code for up to 5 clients - each one gets $10 off their booking which will help you build verified reviews to boost your profile and ranking. Everyone wins."className}`} style={style}>
     {children}
   </span>
 );
@@ -57,7 +57,7 @@ const HowItWorks = () => (
   <section className="w-full pt-16 pb-8 px-4 bg-background">
     <div className="container mx-auto">
       <h2 className="text-3xl md:text-3xl font-bold text-center mb-12 font-sans drop-shadow-sm" style={{ color: "#222222" }}>
-        How PartaiBook Works
+        How Partaibook Works
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto px-2">
         {[
@@ -209,7 +209,7 @@ const SignupModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void
                 Join the Waitlist
               </h3>
               <p className="text-gray-600">
-                Be the first to know when PartaiBook launches!
+                Be the first to know when Partaibook launches!
               </p>
             </div>
 
@@ -321,7 +321,7 @@ const SignupModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void
 export default function VendorLandingPage() {
   const [isSignupModalOpen, setIsSignupModalOpen] = React.useState(false);
 
-  const handleJoinPartaiBook = () => {
+  const handleJoinPartaibook = () => {
     setIsSignupModalOpen(true);
   };
 
@@ -405,7 +405,7 @@ export default function VendorLandingPage() {
               marginRight: "auto"
             }}
           >
-            PartaiBook brings bookings your way and puts your business on autopilot, with AI that handles admin, secures payments automatically, and even answers repetitive questions with your own mini FAQ assistant - all in one simple dashboard.
+            Partaibook brings bookings your way and puts your business on autopilot, with AI that handles admin, secures payments automatically, and even answers repetitive questions with your own mini FAQ assistant - all in one simple dashboard.
           </div>
 
           <div 
@@ -425,29 +425,29 @@ export default function VendorLandingPage() {
             Get discovered, get booked and get paid so you can focus on what you do best.
           </div>
 
-          <Button onClick={handleJoinPartaiBook} className="mb-8 px-6 py-3 text-base rounded-xl" style={{ backgroundColor: "#FF8C42", color: "white", border: "none" }}>
+          <Button onClick={handleJoinPartaibook} className="mb-8 px-6 py-3 text-base rounded-xl" style={{ backgroundColor: "#FF8C42", color: "white", border: "none" }}>
             Become a Founding Vendor in NYC!
           </Button>
           
           <div className="flex flex-wrap justify-center gap-2 md:gap-3">
-            <Badge className="border px-2 py-1 md:px-3 md:py-2 rounded-xl text-xs md:text-sm" style={{ borderColor: "#A78BFA", color: "#A78BFA" }}>
+            <Badge className="border-2 px-2 py-1 md:px-3 md:py-2 text-xs md:text-sm" style={{ borderColor: "#A78BFA", color: "#A78BFA", backgroundColor: "white", borderWidth: "2px", borderRadius: "8px" }}>
               Instant Bookings
             </Badge>
-            <Badge className="border-primary text-primary px-2 py-1 md:px-3 md:py-2 rounded-xl border text-xs md:text-sm">
+            <Badge className="border-2 px-2 py-1 md:px-3 md:py-2 text-xs md:text-sm" style={{ borderColor: "#00CBA7", color: "#00CBA7", backgroundColor: "white", borderWidth: "2px", borderRadius: "8px" }}>
               Free to Join
             </Badge>
-            <Badge className="border-accent text-accent px-2 py-1 md:px-3 md:py-2 rounded-xl border text-xs md:text-sm">
+            <Badge className="border-2 px-2 py-1 md:px-3 md:py-2 text-xs md:text-sm" style={{ borderColor: "#FF8C42", color: "#FF8C42", backgroundColor: "white", borderWidth: "2px", borderRadius: "8px" }}>
               Built-In Admin Assistant
             </Badge>
           </div>
         </div>
       </section>
 
-      {/* Why Join PartaiBook */}
+      {/* Why Join Partaibook */}
       <section className="py-16 px-4 bg-[#effdfa]">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-3xl font-bold text-center mb-12 font-sans drop-shadow-sm" style={{ color: "#222222" }}>
-            Why Join PartaiBook?
+            Why Join Partaibook?
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -570,7 +570,7 @@ export default function VendorLandingPage() {
       <section className="py-16 px-4 !bg-[#FDF9F5] relative z-10">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-3xl font-bold text-center mb-12 font-sans drop-shadow-sm airbnb-header" style={{ color: "#222222" }}>
-            The Old Way vs. The PartaiBook Way
+            The Old Way vs. The Partaibook Way
           </h2>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -601,7 +601,7 @@ export default function VendorLandingPage() {
             <div className="bg-green-50 border-2 border-green-300 rounded-2xl p-8">
               <div className="text-center mb-6">
                 <span className="text-4xl mb-2 block">🎉</span>
-                <h3 className="text-xl font-bold text-green-700">Your week with PartaiBook:</h3>
+                <h3 className="text-xl font-bold text-green-700">Your week with Partaibook:</h3>
               </div>
               <div className="space-y-4">
                 {[
@@ -633,11 +633,11 @@ export default function VendorLandingPage() {
           <div className="space-y-4">
             {[
               {
-                question: "Where is PartaiBook available?",
+                question: "Where is Partaibook available?",
                 answer: "We're launching in New York City first! If you're a vendor based in the Bronx, Queens, or Brooklyn, you'll be the first vendors who can create profiles and take bookings as soon as we launch. We're expanding to Manhattan, Staten Island, and other cities soon after - join the waitlist to be first in line when we reach your area. You'll need to be registered as a business or sole trader with your local tax authority and accept digital payments."
               },
               {
-                question: "Does it cost to join PartaiBook?",
+                question: "Does it cost to join Partaibook?",
                 answer: "Nope, it’s free to create your profile and showcase your services. Founding members get 90 days fee-free bookings, we'll take 0% commission. After 90 days, we only take 5% of the deposit (not the full booking amount) as a platform fee. You keep the majority of your earnings! There are no hidden costs or montlhly charges."
               },
               {
@@ -645,7 +645,7 @@ export default function VendorLandingPage() {
                 answer: "Deposits are automatically collected at booking and held securely. Final payments are processed before your event and we release the funds to your account the day of the event. You're always protected."
               },
               {
-                question: "What services can list on PartaiBook?",
+                question: "What services can list on Partaibook?",
                 answer: "If you help make parties happen, like baking, catering, decorating, DJing, entertaining, or providing a venue you’re welcome to join."
               },
               {
@@ -690,7 +690,7 @@ export default function VendorLandingPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
-              onClick={handleJoinPartaiBook}
+              onClick={handleJoinPartaibook}
               className="px-6 py-3 text-base rounded-xl"
               style={{ backgroundColor: "#FF8C42", color: "white", border: "none" }}
               aria-label="Become a founding vendor now"

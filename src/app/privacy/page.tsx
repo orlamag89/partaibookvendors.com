@@ -30,7 +30,7 @@ export default function PrivacyPolicy() {
 
           <div className="prose prose-lg max-w-none">
             <p className="text-lg mb-6" style={{ color: "#6A6A6A" }}>
-              PartaiBook ("we," "us," or "our") is committed to protecting the privacy of our vendors. This Privacy Policy outlines how we collect, use, and store your data when you use our platform.
+              Partaibook ("we," "us," or "our") is committed to protecting the privacy of our vendors. This Privacy Policy outlines how we collect, use, and store your data when you use our platform.
             </p>
 
             <section className="mb-8">
@@ -120,7 +120,7 @@ export default function PrivacyPolicy() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
               <Sparkles className="h-6 w-6 text-primary" />
-              <span className="text-lg font-semibold" style={{ color: "#222222" }}>PartaiBook</span>
+              <span className="text-lg font-semibold" style={{ color: "#222222" }}>Partaibook</span>
             </div>
             <div className="flex space-x-6 text-sm">
               <a href="/privacy" className="text-muted-foreground hover:text-primary transition-colors">Privacy</a>
@@ -131,7 +131,7 @@ export default function PrivacyPolicy() {
           <div className="w-full border-t border-border my-6" />
 
           <div className="text-center text-sm text-muted-foreground">
-            <p>© 2025 PartaiBook. All rights reserved. AI-Powered Party Planning for Real Life.</p>
+            <p>© 2025 Partaibook. All rights reserved. AI-Powered Party Planning for Real Life.</p>
           </div>
         </div>
       </footer>

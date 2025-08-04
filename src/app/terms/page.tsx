@@ -30,7 +30,7 @@ export default function TermsOfService() {
 
           <div className="prose prose-lg max-w-none">
             <p className="text-lg mb-6" style={{ color: "#6A6A6A" }}>
-              Welcome to PartaiBook. By creating a vendor profile and using our platform, you agree to the following terms:
+              Welcome to Partaibook. By creating a vendor profile and using our platform, you agree to the following terms:
             </p>
 
             <section className="mb-8">
@@ -52,7 +52,7 @@ export default function TermsOfService() {
                 2. Fees
               </h2>
               <ul className="list-disc list-inside space-y-2 ml-4" style={{ color: "#6A6A6A" }}>
-                <li>Joining PartaiBook is free</li>
+                <li>Joining Partaibook is free</li>
                 <li>For founding members, there is no commission during your first 90 days</li>
                 <li>After 90 days, we take a 5% commission on deposits for confirmed bookings</li>
                 <li>No listing fees or monthly subscriptions</li>
@@ -97,7 +97,7 @@ export default function TermsOfService() {
                 6. Limitation of Liability
               </h2>
               <p style={{ color: "#6A6A6A" }}>
-                PartaiBook is not responsible for disputes between vendors and customers. However, we may step in to mediate or resolve certain issues where needed.
+                Partaibook is not responsible for disputes between vendors and customers. However, we may step in to mediate or resolve certain issues where needed.
               </p>
             </section>
 
@@ -142,7 +142,7 @@ export default function TermsOfService() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
               <Sparkles className="h-6 w-6 text-primary" />
-              <span className="text-lg font-semibold" style={{ color: "#222222" }}>PartaiBook</span>
+              <span className="text-lg font-semibold" style={{ color: "#222222" }}>Partaibook</span>
             </div>
             <div className="flex space-x-6 text-sm">
               <a href="/privacy" className="text-muted-foreground hover:text-primary transition-colors">Privacy</a>
@@ -153,7 +153,7 @@ export default function TermsOfService() {
           <div className="w-full border-t border-border my-6" />
 
           <div className="text-center text-sm text-muted-foreground">
-            <p>© 2025 PartaiBook. All rights reserved. AI-Powered Party Planning for Real Life.</p>
+            <p>© 2025 Partaibook. All rights reserved. AI-Powered Party Planning for Real Life.</p>
           </div>
         </div>
       </footer>
