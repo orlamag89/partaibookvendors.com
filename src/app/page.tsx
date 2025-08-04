@@ -358,7 +358,7 @@ export default function VendorLandingPage() {
         <div className="container mx-auto px-4 py-1 md:py-2">
           <div className="flex justify-center">
             <a href="/" className="cursor-pointer">
-              <img src="/logo.png" alt="Partaibook" className="h-14 md:h-24 w-auto" />
+              <img src="/logo.png" alt="Partaibook" className="h-16 md:h-24 w-auto" />
             </a>
           </div>
         </div>
@@ -367,7 +367,7 @@ export default function VendorLandingPage() {
       {/* Hero Section */}
       <section className="py-4 md:py-8 px-8 pb-8">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 airbnb-header" style={{ lineHeight: "1.2" }}>
+          <h2 className="text-2xl md:text-4xl font-bold mb-6 airbnb-header" style={{ lineHeight: "1.2" }}>
             You make parties happen. <br />
             <span style={{ color: "#00CBA7" }}>We make bookings effortless.</span>
           </h2>
@@ -682,7 +682,7 @@ export default function VendorLandingPage() {
       {/* Final CTA Section */}
       <section className="py-4 px-4 bg-background">
         <div className="container mx-auto text-center max-w-4xl">
-          <h2 className="text-3xl md:text-3xl font-bold text-center mb-6 font-sans drop-shadow-sm" style={{ color: "#222222" }}>
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 font-sans drop-shadow-sm" style={{ color: "#222222" }}>
             Be one of the first to join.
           </h2>
           <p className="text-[18px] leading-relaxed mb-6" style={{ color: "#222222" }}>
